@@ -1,7 +1,7 @@
 #include<X11/Xlib.h>
 #include <cstdio>
 
-
+#define KEY_EXIT 9
 #define KEY_UP 111
 #define KEY_DOWN 116
 #define KEY_LEFT 113
@@ -25,7 +25,9 @@ int main()
 	XMapWindow(d, w);
 	XEvent e;
 
-	while(true)
+	bool done = false;
+
+	while(!done)
 	{
 		if(XPending(d))
 		{
@@ -41,8 +43,8 @@ int main()
 					case KEY_DOWN: printf("KEY_DOWN PRESSED\n"); break;
 					case KEY_LEFT: printf("KEY_LEFT PRESSED\n"); break;
 					case KEY_RIGHT: printf("KEY_RIGHT PRESSED\n"); break;
+					case KEY_EXIT: printf("ESCAPE KEY PRESSED\n"); done = true; XCloseDisplay(d);  break;
 				}
-
 			}	
 
 		}	
@@ -50,7 +52,6 @@ int main()
 	}
 
 	getchar();
-	XCloseDisplay(d);
 	
 
 return 0;
