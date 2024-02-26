@@ -1,0 +1,3 @@
+/home/tanmay/Documents/code/games/GAMe/build/CMakeFiles/exegame.dir
+/home/tanmay/Documents/code/games/GAMe/build/CMakeFiles/edit_cache.dir
+/home/tanmay/Documents/code/games/GAMe/build/CMakeFiles/rebuild_cache.dir
