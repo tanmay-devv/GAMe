@@ -92,6 +92,10 @@ exegame_EXTERNAL_OBJECTS =
 
 exegame: CMakeFiles/exegame.dir/main.cpp.o
 exegame: CMakeFiles/exegame.dir/build.make
+exegame: /usr/lib/x86_64-linux-gnu/libSM.so
+exegame: /usr/lib/x86_64-linux-gnu/libICE.so
+exegame: /usr/lib/x86_64-linux-gnu/libX11.so
+exegame: /usr/lib/x86_64-linux-gnu/libXext.so
 exegame: CMakeFiles/exegame.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tanmay/Documents/code/games/GAMe/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable exegame"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/exegame.dir/link.txt --verbose=$(VERBOSE)
